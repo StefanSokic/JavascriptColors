@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Color Scroller</title>
+	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+</head>
+<body>
+	</style>
+	<script type="text/javascript">
+		var full = document.createElement('DIV');
+		full.style.height = "100vh";
+		document.body.appendChild(full);
+		full.addEventListener('mousemove', function(event) {
+			console.log(event);
+			var x = event.clientX;
+			var y = event.clientY;
+			full.style.backgroundColor = 'rgb(' + x + ', ' + y + ', 100)';
+		})
+	</script>
+</body>
+</html>
